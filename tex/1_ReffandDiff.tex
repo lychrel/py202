@@ -1,0 +1,126 @@
+\documentclass[twocolumn,draft]{article}
+\usepackage{savetrees}
+% a more conservative option:
+% \documentclass[]{article}
+% \usepackage{fullpage}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage{showlabels}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+% \Blindtext to use.
+
+\RequirePackage[l2tabu, orthodox]{nag}
+\usepackage[all,warning]{onlyamsmath}
+
+\usepackage{hyperref}
+
+% blue text for questions
+\newcommand{\bt}[1]{\textcolor{blue}{#1}}
+
+\title{PY 202, 4/3/17}
+\author{John M. Lynch\footnote{Undergraduate ECE/Physics, NCSU, Raleigh, NC 27705. E-Mail: \texttt{jmlynch3@ncsu.edu}}}
+\date{\today}
+
+\begin{document}
+  \maketitle
+  % major enum
+  \section{Qualitative}
+  \begin{enumerate}
+  	\item laser-box and mirrors demonstration
+		\begin{enumerate}
+			\item consider, effectively, all the light
+		in parallel
+			\item convex mirror: they diverge out
+			\item concave mirror: they focus in
+		\end{enumerate}
+	\item deflection of light entering water
+		\begin{enumerate}
+		\item moving from any material to any other
+		material will change direction of light
+		\item \emph{total internal reflection}
+			\begin{enumerate}
+			\item determined by \emph{index of refraction} and Snell's law:
+			\begin{equation}
+				n_{1}\sin{(\theta_{1})} = n_{2}\sin{(\theta_{2})}
+			\end{equation}
+			\begin{enumerate}
+				\item $n$'s are indices of refraction
+			\end{enumerate}
+		\end{enumerate}
+		\end{enumerate}
+	\item laser light bending with water: principle
+	behind the use of \emph{fiberoptics}
+		\begin{enumerate}
+		\item Hits interface at an angle such that it can't escape.
+		\item if you never get any component that goes out, you always reflect everything on the inside.
+		\item \bt{ask about this!}
+	\end{enumerate}
+	\item Air's index of refraction changes with
+	temperature
+		\begin{enumerate}
+			\item example: hot air rising from the
+			ground makes objects seem to ``flip''
+		\end{enumerate}
+	\item bottle of water
+		\begin{enumerate}
+			\item water's full of beads, but, when
+			together in jar, they look like water.
+			Why?
+				\begin{enumerate}
+					\item because they have the 
+					\emph{same index of refraction
+						as water}!
+				\end{enumerate}
+		\end{enumerate}
+  \end{enumerate}
+  
+  \section{Quantitative}
+  \begin{enumerate}
+	\item Index of refraction:
+		\begin{equation}
+			n = \frac{c}{v}
+		\end{equation}
+		\begin{enumerate}
+		  	\item $n_{air} = 1$
+			\item $n > 1$ (all others)
+			\item $v \leq c$
+				\begin{enumerate}
+					\item $v=$ speed of light in
+					material
+				\end{enumerate}
+		\end{enumerate}
+	\item wavelength in material
+		\begin{equation}
+			\lambda_{n} = \frac{\lambda}{n}
+						= \frac{\lambda}{\frac{c}{v}}
+						= \frac{v}{c}\lambda
+		\end{equation}
+	\item angle of incidence measured from source to
+	\emph{vertical}
+	\item angle of deflection is measured from
+	opposite vertical (i.e. same axis)
+		\begin{enumerate}
+			\item \bt{add pic later!}
+		\end{enumerate}
+	\item flat mirror gives perfect reflection:
+		\begin{equation}
+			\theta_{1} = \theta_{2}
+		\end{equation}
+  \end{enumerate}
+  
+  \section{Homework}
+  \noindent Read Moodle
+  
+\end{document}
