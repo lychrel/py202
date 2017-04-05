@@ -1,0 +1,135 @@
+\documentclass[twocolumn,draft]{article}
+\usepackage{savetrees}
+% a more conservative option:
+% \documentclass[]{article}
+% \usepackage{fullpage}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage{showlabels}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+% \Blindtext to use.
+
+\usepackage{graphicx}
+
+\RequirePackage[l2tabu, orthodox]{nag}
+\usepackage[all,warning]{onlyamsmath}
+
+\usepackage{hyperref}
+
+% blue text for questions
+\newcommand{\bt}[1]{\textcolor{blue}{#1}}
+
+\title{PY 202, 4/3/17}
+\author{John M. Lynch\footnote{Undergraduate ECE/Physics, NCSU, Raleigh, NC 27705. E-Mail: \texttt{jmlynch3@ncsu.edu}}}
+\date{\today}
+
+\begin{document}
+  \maketitle
+\section*{In-Class Quiz}
+
+Explain, in your own words (sketches allowed), the following terms:
+
+\begin{enumerate}
+	\item Reflection
+	\item Refraction
+	\item Dispersion
+\end{enumerate}
+
+\section*{In-Class Quiz Answers}
+
+\begin{enumerate}
+	\item \underline{Reflection}: when no incident light on the other side of a material. Could also
+					  say that the incident angle $\theta_{i}$ and the reflective angle $\theta_{r}$
+					  are equal:
+					  \begin{equation}
+					  	\theta_{i} = \theta_{r}
+					  \end{equation}
+					  For example, when using a mirror.
+	\item \underline{Refraction}: the bending of light when it moves from one medium to another.
+								  Involves two transparent materials with different indices
+								  of refraction. \emph{The bending of light at the interface}.
+								  Governed by Snell's Law:
+								  \begin{equation}
+								  	n_{1}\sin{\theta_{1}} = n_{2}\sin{\theta_{2}}
+								  \end{equation}
+	\item \underline{Dispersion}: when the angle of reflection is different for each wavelength
+		 						  of input light. When the index of refraction of a material
+								  depends on the wavelength (e.g. with air and a glass prism).
+								  Examples: rainbow, prism
+	\item \underline{Diffraction}: (Bonus) when light enters a curved surface
+\end{enumerate}
+
+\section*{Optical Phenomena}
+
+\subsection*{Reflection}
+\begin{enumerate}
+	\item $\theta_{i} = \theta_{r}$
+	\item if you have a perfectly flat mirror, parallel incident light will reflect in parallel
+		  (\emph{Specular reflection})
+	\item if your surface is \emph{not} flat, parallel incident light will \emph{not} reflect in
+		  parallel (\emph{Diffuse reflection})
+\end{enumerate}
+
+\subsection*{Refraction}
+\begin{enumerate}
+	\item with transparent materials of different indices of refraction, initial material of
+	index $n_{1}$ and other medium of index $n_{2}$, 
+		\[
+			n_{1}\sin{\theta_{1}} = n_{2}\sin{\theta_{2}}
+		\]
+	\item $n_{1}>n_{2}$: the larger $n_{2}$ is, the smaller $\theta_{2}$ becomes
+	\item can infer relative index magnitudes by comparing angle of incidence to angle of
+	refraction
+\end{enumerate}
+
+\subsection*{Critical Angle}
+	\begin{equation*}
+		\boxed{\sin{\theta_{c}} = \frac{n_{2}}{n_{1}}}
+	\end{equation*}
+\noindent critical angle is dividing line between two different behaviors:
+	\begin{enumerate}
+		\item if $\theta < \theta_{c}$, reflected \emph{\&} refracted light
+		\item if $\theta = \theta_{c}$, reflected $\cong$ refracted: exactly along the interface
+			  between the two materials
+		\item if $\theta > \theta_{c}$, no reflected light (\emph{total internal reflection})
+	\end{enumerate}
+
+% TODO: correctly implement PNG imports
+\subsection*{Water Tank Problem}
+\bt{discuss with Dr. Frohlic!}
+
+\section*{Polarization}
+Assume wave traveling to right:
+%\includegraphics{"./waves"}
+%\includegraphics{"second".png}
+
+\section*{Propagation}
+% TODO: Turn the below into a table
+% TODO: import the board with a filter applied to it
+% TODO: consider a script boardImport.py
+% 			- sorta here: http://registry.gimp.org/node/19822
+
+\section*{WTP Image}
+%\includegraphics[scale=0.1]{"wtp".png}
+
+\section*{Quiz Topic for Friday}
+Reflection, Refraction, Critical Angle
+
+
+
+
+
+  
+\end{document}
