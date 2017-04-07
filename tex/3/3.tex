@@ -1,0 +1,145 @@
+\documentclass[twocolumn,draft]{article}
+\usepackage{savetrees}
+% a more conservative option:
+% \documentclass[]{article}
+% \usepackage{fullpage}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage{showlabels}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+% \Blindtext to use.
+
+\usepackage{graphicx}
+
+\RequirePackage[l2tabu, orthodox]{nag}
+\usepackage[all,warning]{onlyamsmath}
+
+\usepackage{hyperref}
+
+% blue text for questions
+\newcommand{\bt}[1]{\textcolor{blue}{#1}}
+
+\title{PY 202, 4/7/17}
+\author{John M. Lynch\footnote{Undergraduate ECE/Physics, NCSU, Raleigh, NC 27705. E-Mail: \texttt{jmlynch3@ncsu.edu}}}
+\date{\today}
+
+\begin{document}
+  \maketitle
+\section*{HW Note: Fishing}
+% See image
+\section*{In-Class Quiz}
+\begin{enumerate}
+	\item 
+		light passes into two different media, deflects at two different angles (one smaller, one
+		larger). In which media is the light traveling \emph{faster}?
+			\begin{enumerate}
+				\item the two things you consider are
+				\begin{equation*}
+					n_{1}\sin{\theta_{1}} = n_{2}\sin{\theta_{2}}
+				\end{equation*}
+				so
+				\begin{equation*}
+					\theta_{1} > \theta_{2} \qquad\Longrightarrow\qquad n_{1} < n_{2}
+				\end{equation*}
+				and
+				\begin{equation*}
+					n = \frac{c}{v}
+				\end{equation*}
+				so
+				\begin{equation*}
+					n_{1} = \frac{c}{v_{1}} < n_{2}  \frac{c}{c_{2}}
+				\end{equation*}
+				and
+				\begin{equation*}
+					v_{1} > v_{2}
+				\end{equation*}
+			\end{enumerate}
+			
+	\item to shoot a fish, where should you aim?
+		\begin{enumerate}
+			\item aim slightly below. The light, entering the liquid of higher index of refraction
+				than air, will deflect from the vertical, implying that the fish is lower. Your
+				brain just extrapolates it to be where the light would go un-refracted.
+		\end{enumerate}
+		
+	\item Now you're shooting a laser gun. Where do you aim w/r/t where you see the fish?
+		\begin{enumerate}
+			\item aim it at the real image. It'll deflect the same way the visible light does
+				and hits the fish. You can assume the laser's wavelength is similar to visible
+				light, so it doesn't affect index of refraction $n(\lambda)$. And even if a 
+				difference in indices of refraction did exist, it wouldn't be extreme enough to
+				miss the fish. 
+		\end{enumerate}
+	\item \underline{quiz grade:} $3/3 = 100$\%
+\end{enumerate}
+
+Moral of story: brains can't infer the correct angle, which often leads to misunderstandings.
+
+\subsection*{Examples}
+\begin{enumerate}
+	\item 
+		Light travels through a material with a speed 0.85c. What is teh critical angle for total
+		internal
+		reflection of a light ray at the interface between the material and a vacuum?
+
+		Well, $\sin{\theta_{2}}=90~deg$, so
+
+		\begin{equation}
+			\sin{\theta_{L}} = \frac{n_{2}}{n_{1}}
+		\end{equation}
+
+		with
+
+		\begin{align*}
+			n &= \frac{c}{v} \\
+			v_{1} &= c \\
+			v_{2} &= 0.85c
+		\end{align*}
+
+		use to solve.
+	
+	\item
+		ray of light with two wavelengths hits piece of acrylic at angle 30 from surface (red
+		herring:
+		that isn't the angle of incidence!). What's the angular separation between red and blue
+		light
+		rays that pass through the acrylic? (Second distraction: the index of refraction of acrylic
+		doesn't matter.)
+		
+		Just calculate the two angles of refraction and calculate their difference. To tell which
+		one is which: shorter wavelength means smaller angle. Angle of incidence is found by
+			\begin{equation*}
+				\theta_{i} = 90 - 30 = 60 ~deg
+			\end{equation*}
+			
+	\item light ray passing through two media; infer relative magnitudes of indices of refraction
+		from the relative angle sizes (i.e. it deflects more coming out of the material than it
+		does going in).
+			\begin{align*}
+				n_{2} &> n_{1} \\
+				n_{3} &< n_{2} \\
+				n_{1} &> n_{3}
+			\end{align*}
+		Everything is measured with respect to a surface normal axis/vector; that's really important
+		to remember.
+			
+\end{enumerate}
+
+\section*{Polarization}
+
+\section*{Line Spectra and Atoms}
+
+  
+\end{document}
